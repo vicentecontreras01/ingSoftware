@@ -32,10 +32,10 @@ class Empleado
      */
     private $nombre;
     /**
-     * @var string $fechaIngreso
+     * @var string $fechaInicio
      * @ORM\Column(type="string", nullable=false)
      */
-    private $fechaIngreso;
+    private $fechaInicio;
     /**
      * @var string $apellido
      * @ORM\Column(type="string", nullable=false)
@@ -143,25 +143,25 @@ class Empleado
     }
 
     /**
-     * Get $fechaIngreso
+     * Get $fechaInicio
      *
      * @return  string
      */
-    public function getFechaIngreso()
+    public function getFechaInicio()
     {
-        return $this->fechaIngreso;
+        return $this->fechaInicio;
     }
 
     /**
-     * Set $fechaIngreso
+     * Set $fechaInicio
      *
-     * @param  string  $fechaIngreso  $fechaIngreso
+     * @param  string  $fechaInicio  $fechaInicio
      *
      * @return  self
      */
-    public function setFechaIngreso(string $fechaIngreso)
+    public function setFechaInicio(string $fechaInicio)
     {
-        $this->fechaIngreso = $fechaIngreso;
+        $this->fechaInicio = $fechaInicio;
 
         return $this;
     }
